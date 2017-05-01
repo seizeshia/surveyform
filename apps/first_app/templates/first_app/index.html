@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+  </head>
+  <body>
+    <form class="" action="/results" method="post">
+      {% csrf_token %}
+      <p>Name: <input type="text" name="name" value=""></p>
+      <p>Dojo Location: <select class="" name="location">
+      <option value="Mountainview">Mountain View</option>
+      <option value="Burbank">Burbank</option>
+      <option value="Seattle">Seattle</option>
+      </select>
+      </p>
+
+      <p>Favorite Language: <select class="" name="favorite">
+        <option value="Javascript">Javascript</option>
+        <option value="Python">Python</option>
+        <option value="Swift">Swift</option>
+      </select></p>
+
+      <p>Comment(optional):</p>
+      <textarea name="comment" rows="8" cols="80"></textarea>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
